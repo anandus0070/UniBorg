@@ -199,11 +199,11 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 **[GCC 7.3.0]**
 **Talethrun 1.9.0**
 
-**Custom Built Fork:** https://github.com/ravana69/Pornhub""",
+**Custom Built Fork:** https://github.com/ananduks/UniBorg""",
                 buttons=[
                     [custom.Button.url("👤Contact Creator👤", "https://telegram.dog/r4v4n4"), custom.Button.url(
                         "📼Ravana Audio Memes📼", "https://t.me/tgaudiomemes")],
-                    [custom.Button.url("👨‍💻Source Code👨‍💻", "https://github.com/ravana69/Pornhub"), custom.Button.url(
+                    [custom.Button.url("👨‍💻Source Code👨‍💻", "https://github.com/ananduks/UniBorg"), custom.Button.url(
                         "❕❗Deploy Me❗❕", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fravana69%2FPornHub%2F&template=https%3A%2F%2Fgithub.com%2Fravana69%2FPornHub%2F")],
                     [custom.Button.url("🔰Update Fork🔰", "tg://need_update_for_some_feature"), custom.Button.url(
                         "✳️Fork Boost✳️", "tg://some_unsupported_feature"), custom.Button.url(
@@ -265,7 +265,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 def paginate_help(page_number, loaded_plugins, prefix):
     number_of_rows = Config.NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD
     number_of_cols = 2
-    multi = "😇🤠🤡😈👿👹👺💀☠👻👽👾🤖💩😺😸😹😻😼😽🙀😿😾🙈🙉🙊👦👧👨👩👴👵👶"
+    multi = "😂🥳🥺🤓🥴😌😜😂🥳🥺🤓🥴😌😜😂🥳🥺🤓🥴😌😜😂🥳🥺🤓🥴😌😜😂🥳🥺🤓🥴😌😜"
     helpable_plugins = []
     for p in loaded_plugins:
         if not p.startswith("_"):
@@ -283,7 +283,7 @@ def paginate_help(page_number, loaded_plugins, prefix):
     if len(pairs) > number_of_rows:
         pairs = pairs[modulo_page * number_of_rows:number_of_rows * (modulo_page + 1)] + \
             [
-            (custom.Button.inline("⏪", data="{}_prev({})".format(prefix, modulo_page)),
-             custom.Button.inline("⏩", data="{}_next({})".format(prefix, modulo_page)))
+            (custom.Button.inline("🌚", data="{}_prev({})".format(prefix, modulo_page)),
+             custom.Button.inline("🌝", data="{}_next({})".format(prefix, modulo_page)))
         ]
     return pairs
